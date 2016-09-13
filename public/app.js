@@ -20,7 +20,7 @@ $(document).on('click', 'p', function(){
     .done(function( data ) {
       console.log(data);
 
-      $('#notes').append('<h2>' + data.title + '</h2>'); 
+      $('#notes').append('<h2 style="font-size:16px;font-weight:bold;margin-top:0;">' + data.title + '</h2>'); 
 
       $('#notes').append('<input id="titleinput" name="title" >'); 
 

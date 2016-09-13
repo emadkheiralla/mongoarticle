@@ -16,7 +16,8 @@ app.use(express.static('public'));
 
 
 
-mongoose.connect('mongodb://heroku_7rsrwpd6:eh1lfm7o00veil3hbaq8dpna0l@ds029436.mlab.com:29436/heroku_7rsrwpd6');
+//mongoose.connect('mongodb://heroku_7rsrwpd6:eh1lfm7o00veil3hbaq8dpna0l@ds029436.mlab.com:29436/heroku_7rsrwpd6');
+mongoose.connect('mongodb://localhost/week18day3mongoose');
 var db = mongoose.connection;
 
 db.on('error', function(err) {
